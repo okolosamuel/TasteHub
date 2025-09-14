@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - TasteHub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">TasteHub</a>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html" class="order-btn">Order Online</a></li>
+                <li><div class="dark-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                </div></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menu Header -->
+    <section class="menu-header">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Explore our culinary creations crafted with passion and precision</p>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="menu-categories-section">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="starters">Starters</button>
+                <button class="category-tab" data-category="mains">Main Courses</button>
+                <button class="category-tab" data-category="desserts">Desserts</button>
+                <button class="category-tab" data-category="drinks">Drinks</button>
+            </div>
+
+            <!-- Starters Menu -->
+            <div class="menu-items-container" id="starters">
+                <div class="section-header">
+                    <h2>Starters</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/food-1.jpg" alt="Bruschetta">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Classic Bruschetta</h3>
+                                <span class="price">$8.99</span>
+                            </div>
+                            <p>Toasted bread topped with fresh tomatoes, basil, garlic, and extra virgin olive oil</p>
+                            <button class="btn btn-red add-to-cart" data-id="s1" data-name="Classic Bruschetta" data-price="8.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/food10.jpg" alt="Calamari">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Crispy Calamari</h3>
+                                <span class="price">$12.99</span>
+                            </div>
+                            <p>Lightly battered and fried calamari served with lemon aioli and marinara sauce</p>
+                            <button class="btn btn-red add-to-cart" data-id="s2" data-name="Crispy Calamari" data-price="12.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/food11.jpg" alt="Soup">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Butternut Squash Soup</h3>
+                                <span class="price">$7.99</span>
+                            </div>
+                            <p>Creamy butternut squash soup with a hint of nutmeg and toasted pumpkin seeds</p>
+                            <button class="btn btn-red add-to-cart" data-id="s3" data-name="Butternut Squash Soup" data-price="7.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/food12.jpg" alt="Salad">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Mediterranean Salad</h3>
+                                <span class="price">$10.99</span>
+                            </div>
+                            <p>Fresh mixed greens with feta cheese, olives, cucumbers, tomatoes, and balsamic vinaigrette</p>
+                            <button class="btn btn-red add-to-cart" data-id="s4" data-name="Mediterranean Salad" data-price="10.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/food13.jpg" alt="Wings">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Spicy Buffalo Wings</h3>
+                                <span class="price">$13.99</span>
+                            </div>
+                            <p>Crispy chicken wings tossed in our signature buffalo sauce, served with blue cheese dip</p>
+                            <button class="btn btn-red add-to-cart" data-id="s5" data-name="Spicy Buffalo Wings" data-price="13.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/food14.jpg" alt="Shrimp">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Garlic Butter Shrimp</h3>
+                                <span class="price">$14.99</span>
+                            </div>
+                            <p>Sautéed shrimp in a rich garlic butter sauce with fresh herbs and lemon</p>
+                            <button class="btn btn-red add-to-cart" data-id="s6" data-name="Garlic Butter Shrimp" data-price="14.99">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Courses Menu -->
+            <div class="menu-items-container" id="mains" style="display: none;">
+                <div class="section-header">
+                    <h2>Main Courses</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/food14.jpg" alt="Steak">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Grilled Ribeye Steak</h3>
+                                <span class="price">$29.99</span>
+                            </div>
+                            <p>12oz ribeye steak grilled to perfection, served with roasted potatoes and seasonal vegetables</p>
+                            <button class="btn btn-red add-to-cart" data-id="m1" data-name="Grilled Ribeye Steak" data-price="29.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/food2.jpg" alt="Salmon">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Herb-Crusted Salmon</h3>
+                                <span class="price">$24.99</span>
+                            </div>
+                            <p>Fresh Atlantic salmon with an herb crust, served with quinoa and sautéed spinach</p>
+                            <button class="btn btn-red add-to-cart" data-id="m2" data-name="Herb-Crusted Salmon" data-price="24.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/food3.jpg" alt="Pasta">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Truffle Mushroom Pasta</h3>
+                                <span class="price">$19.99</span>
+                            </div>
+                            <p>Homemade fettuccine with wild mushrooms in a creamy truffle sauce, topped with parmesan</p>
+                            <button class="btn btn-red add-to-cart" data-id="m3" data-name="Truffle Mushroom Pasta" data-price="19.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/food4.jpg" alt="Chicken">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Lemon Herb Roasted Chicken</h3>
+                                <span class="price">$22.99</span>
+                            </div>
+                            <p>Half chicken marinated in lemon and herbs, slow-roasted to perfection with garlic mashed potatoes</p>
+                            <button class="btn btn-red add-to-cart" data-id="m4" data-name="Lemon Herb Roasted Chicken" data-price="22.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/food4.jpg" alt="Risotto">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Wild Mushroom Risotto</h3>
+                                <span class="price">$18.99</span>
+                            </div>
+                            <p>Creamy Arborio rice with wild mushrooms, white wine, and parmesan cheese</p>
+                            <button class="btn btn-red add-to-cart" data-id="m5" data-name="Wild Mushroom Risotto" data-price="18.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/food5.jpg" alt="Burger">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Gourmet Beef Burger</h3>
+                                <span class="price">$16.99</span>
+                            </div>
+                            <p>Premium beef patty with caramelized onions, aged cheddar, bacon, and truffle aioli on a brioche bun</p>
+                            <button class="btn btn-red add-to-cart" data-id="m6" data-name="Gourmet Beef Burger" data-price="16.99">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts Menu -->
+            <div class="menu-items-container" id="desserts" style="display: none;">
+                <div class="section-header">
+                    <h2>Desserts</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/food6.jpg" alt="Cheesecake">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>New York Cheesecake</h3>
+                                <span class="price">$8.99</span>
+                            </div>
+                            <p>Creamy classic cheesecake with a graham cracker crust, topped with fresh berries</p>
+                            <button class="btn btn-red add-to-cart" data-id="d1" data-name="New York Cheesecake" data-price="8.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/food7.jpg" alt="Chocolate Lava Cake">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Chocolate Lava Cake</h3>
+                                <span class="price">$9.99</span>
+                            </div>
+                            <p>Warm chocolate cake with a molten center, served with vanilla ice cream</p>
+                            <button class="btn btn-red add-to-cart" data-id="d2" data-name="Chocolate Lava Cake" data-price="9.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/food8.jpg" alt="Tiramisu">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Classic Tiramisu</h3>
+                                <span class="price">$8.99</span>
+                            </div>
+                            <p>Layers of coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa powder</p>
+                            <button class="btn btn-red add-to-cart" data-id="d3" data-name="Classic Tiramisu" data-price="8.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/food9.jpg" alt="Crème Brûlée">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Vanilla Crème Brûlée</h3>
+                                <span class="price">$8.99</span>
+                            </div>
+                            <p>Rich vanilla custard with a caramelized sugar crust</p>
+                            <button class="btn btn-red add-to-cart" data-id="d4" data-name="Vanilla Crème Brûlée" data-price="8.99">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks Menu -->
+            <div class="menu-items-container" id="drinks" style="display: none;">
+                <div class="section-header">
+                    <h2>Drinks</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/drinks-2.jpg" alt="Wine">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>House Red Wine</h3>
+                                <span class="price">$9.99</span>
+                            </div>
+                            <p>Glass of our premium house red wine</p>
+                            <button class="btn btn-red add-to-cart" data-id="dr1" data-name="House Red Wine" data-price="9.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/drinks3.jpg" alt="Cocktail">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Signature Cocktail</h3>
+                                <span class="price">$12.99</span>
+                            </div>
+                            <p>Our signature blend of premium spirits with fresh fruit and herbs</p>
+                            <button class="btn btn-red add-to-cart" data-id="dr2" data-name="Signature Cocktail" data-price="12.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/drinks1.jpg" alt="Coffee">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Artisan Coffee</h3>
+                                <span class="price">$4.99</span>
+                            </div>
+                            <p>Freshly brewed specialty coffee from locally roasted beans</p>
+                            <button class="btn btn-red add-to-cart" data-id="dr3" data-name="Artisan Coffee" data-price="4.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/drinks4.jpg" alt="Smoothie">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3>Fresh Fruit Smoothie</h3>
+                                <span class="price">$6.99</span>
+                            </div>
+                            <p>Blend of seasonal fruits with yogurt and honey</p>
+                            <button class="btn btn-red add-to-cart" data-id="dr4" data-name="Fresh Fruit Smoothie" data-price="6.99">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Preview -->
+    <div class="cart-preview">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <span class="cart-count">0</span>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added here dynamically -->
+            <div class="empty-cart-message">Your cart is empty</div>
+        </div>
+        <div class="cart-total">
+            <p>Total: <span class="total-amount">$0.00</span></p>
+        </div>
+        <a href="order.html" class="btn btn-yellow checkout-btn">Checkout</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about-footer">
+                    <h3>TasteHub</h3>
+                    <p>Where Flavor Meets Art</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section hours">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Thursday: 11AM - 10PM</p>
+                    <p>Friday - Saturday: 11AM - 11PM</p>
+                    <p>Sunday: 10AM - 9PM</p>
+                </div>
+                <div class="footer-section contact-footer">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Flavor Street, Foodville</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@tastehub.com</p>
+                </div>
+                <div class="footer-section quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 TasteHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
