@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - TasteHub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">TasteHub</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dark-mode-toggle"><i class="fas fa-moon"></i></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <header class="gallery-header">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p>A visual feast of our culinary creations and restaurant ambiance</p>
+        </div>
+    </header>
+
+    <!-- Gallery Content -->
+    <section class="gallery-content">
+        <div class="container">
+            <!-- Gallery Filter -->
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="food">Food</button>
+                <button class="filter-btn" data-filter="interior">Interior</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="team">Our Team</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Food Images -->
+                <div class="gallery-item food">
+                    <div class="gallery-image">
+                        <img src="images/gallery(5).jpg" alt="Signature Dish">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Signature Pasta</h3>
+                                <p>Our chef's special homemade pasta</p>
+                                <a href="images/gallery(5).jpg" class="view-image">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item food">
+                    <div class="gallery-image">
+                        <img src="images/gallery(3).jpg" alt="Gourmet Burger">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Gourmet Burger</h3>
+                                <p>Premium beef with artisanal toppings</p>
+                                <a href="images/gallery(3).jpg" class="view-image">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item food">
+                    <div class="gallery-image">
+                        <img src="images/gallery(4).jpg" alt="Fresh Salad">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Garden Fresh Salad</h3>
+                                <p>Locally sourced organic vegetables</p>
+                                <a href="images/gallery(4).jpg" class="view-image">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item food">
+                    <div class="gallery-image">
+                        <img src="images/gallery(6).jpg" alt="Dessert Platter">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Dessert Platter</h3>
+                                <p>Selection of our finest desserts</p>
+                                <a href="images/gallery(6).jpg" class="view-image">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interior Images -->
+                <div class="gallery-item interior">
+                    <div class="gallery-image">
+                        <img src="images/gallery(1).jpg" alt="Main Dining Area">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Main Dining Area</h3>
+                                <p>Elegant and comfortable seating</p>
+                                <a href="images/gallery(1).jpg" class="view-image">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item interior">
+                    <div class="gallery-image">
+                        <img src="images/gallery(7).jpg" alt="Private Dining Room">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Private Dining Room</h3>
+                                <p>Perfect for intimate gatherings</p>
+                                <a href="images/gallery(7).jpg" class="view-image">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item interior">
+                    <div class="gallery-image">
+                        <img src="images/hero-bg.jpg" alt="Bar Area">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Bar & Lounge</h3>
+                                <p>Craft cocktails and premium spirits</p>
+                                <a href="images/hero-bg.jpg" class="view-image">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Events Images -->
+                <div class="gallery-item events">
+                    <div class="gallery-image">
+                        <img src="images/hero-bg-2.jpg" alt="Wedding Reception">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Wedding Reception</h3>
+                                <p>Elegant setup for special celebrations</p>
+                                <a href="images/hero-bg-2.jpg" class="view-image">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item events">
+                    <div class="gallery-image">
+                        <img src="images/download.jpg" alt="Corporate Event">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Corporate Event</h3>
+                                <p>Professional setting for business gatherings</p>
+                                <a href="images/download.jpg" class="view-image">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Images -->
+                <div class="gallery-item team">
+                    <div class="gallery-image">
+                        <img src="images/gallery(10).jpg" alt="Head Chef">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Head Chef Michael</h3>
+                                <p>Culinary genius behind our menu</p>
+                                <a href="images/gallery(10).jpg" class="view-image">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item team">
+                    <div class="gallery-image">
+                        <img src="images/gallery(8).jpg" alt="Kitchen Staff">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Our Kitchen Team</h3>
+                                <p>The talented crew behind every dish</p>
+                                <a href="images/gallery(8).jpg" class="view-image">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item team">
+                    <div class="gallery-image">
+                        <img src="images/gallery(9).jpg" alt="Service Staff">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h3>Service Team</h3>
+                                <p>Dedicated to providing exceptional service</p>
+                                <a href="images/gallery(9).jpg" class="view-image">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-image" src="" alt="Lightbox Image">
+        <div class="lightbox-caption"></div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>TasteHub</h2>
+                    <p>Where Flavor Meets Art</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="order.html">Order Online</a></li>
+                        <li><a href="reservation.html">Reservations</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Flavor Street, Foodville, FC 12345</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@tastehub.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h3>Subscribe to Newsletter</h3>
+                        <form>
+                            <input type="email" placeholder="Your Email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 TasteHub. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

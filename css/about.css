@@ -1,0 +1,650 @@
+/* About Us Page Styles */
+
+/* About Header */
+.about-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/gallery\(5).jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 120px 0 80px;
+    margin-top: -40px;
+}
+
+.about-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+
+.about-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #FFD60A;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* About Content */
+.about-content {
+    padding: 80px 0;
+}
+
+.about-content h2 {
+    color: #007AFF;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.about-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #FFD60A;
+}
+
+/* Story Section */
+.story-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.story-image {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.story-image:hover img {
+    transform: scale(1.05);
+}
+
+.story-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.story-text h2 {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.story-text h2::after {
+    left: 0;
+    transform: none;
+}
+
+.story-text .subtitle {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.signature {
+    margin-top: 30px;
+}
+
+.signature img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.signature p {
+    font-style: italic;
+    color: #666;
+}
+
+/* Philosophy Section */
+.philosophy-section {
+    margin-bottom: 80px;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.philosophy-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.philosophy-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.philosophy-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #007AFF;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.philosophy-item:hover .philosophy-icon {
+    background-color: #FFD60A;
+    color: #333;
+}
+
+.philosophy-item h3 {
+    color: #007AFF;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.philosophy-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Team Section */
+.team-section {
+    margin-bottom: 80px;
+}
+
+.team-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.team-member {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.member-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.team-member:hover .member-image img {
+    transform: scale(1.1);
+}
+
+.member-info {
+    padding: 25px;
+}
+
+.member-info h3 {
+    color: #007AFF;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.member-title {
+    color: #FFD60A;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.member-bio {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.member-social {
+    display: flex;
+    gap: 15px;
+}
+
+.member-social a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    color: #007AFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.member-social a:hover {
+    background-color: #007AFF;
+    color: #fff;
+}
+
+/* Milestones Section */
+.milestones-section {
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto 0;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background-color: #007AFF;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #FFD60A;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    box-shadow: 0 0 0 4px #007AFF;
+}
+
+.timeline-content {
+    position: relative;
+    width: calc(50% - 40px);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    left: calc(50% + 40px);
+}
+
+.timeline-content h3 {
+    color: #007AFF;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.timeline-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* About Testimonials */
+.about-testimonials {
+    margin-bottom: 80px;
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    border-radius: 10px;
+}
+
+.testimonial-slider {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial-slide {
+    display: none;
+    animation: fadeEffect 1s;
+}
+
+.testimonial-slide.active {
+    display: block;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+.testimonial-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-quote {
+    position: relative;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+}
+
+.testimonial-quote .fa-quote-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #FFD60A;
+    font-size: 1.5rem;
+}
+
+.testimonial-quote .fa-quote-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #FFD60A;
+    font-size: 1.5rem;
+}
+
+.testimonial-quote p {
+    font-style: italic;
+    color: #333;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonial-author img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007AFF;
+}
+
+.author-info h4 {
+    color: #007AFF;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.author-info p {
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.rating {
+    color: #FF3B30;
+}
+
+.testimonial-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.testimonial-controls button {
+    background-color: transparent;
+    border: none;
+    color: #007AFF;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.testimonial-controls button:hover {
+    color: #FFD60A;
+}
+
+.testimonial-dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #007AFF;
+}
+
+/* About CTA */
+.about-cta {
+    text-align: center;
+    background-color: #007AFF;
+    padding: 60px 30px;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.about-cta h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.about-cta h2::after {
+    background-color: #fff;
+}
+
+.about-cta p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-primary {
+    background-color: #FFD60A;
+    color: #333;
+}
+
+.btn-primary:hover {
+    background-color: #e6c000;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #fff;
+    color: #007AFF;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .about-content {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .about-content h2 {
+    color: #007AFF;
+}
+
+body.dark-mode .story-text p,
+body.dark-mode .testimonial-quote p {
+    color: #ccc;
+}
+
+body.dark-mode .story-text .subtitle,
+body.dark-mode .signature p,
+body.dark-mode .philosophy-item p,
+body.dark-mode .member-bio,
+body.dark-mode .timeline-content p,
+body.dark-mode .author-info p {
+    color: #999;
+}
+
+body.dark-mode .philosophy-item,
+body.dark-mode .team-member,
+body.dark-mode .timeline-content,
+body.dark-mode .testimonial-content {
+    background-color: #2a2a2a;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .about-testimonials {
+    background-color: #222;
+}
+
+body.dark-mode .member-social a {
+    background-color: #333;
+    color: #007AFF;
+}
+
+body.dark-mode .member-social a:hover {
+    background-color: #007AFF;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .story-section {
+        flex-direction: column;
+    }
+    
+    .story-text h2 {
+        text-align: center;
+    }
+    
+    .story-text h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-dot {
+        left: 30px;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 80px);
+        left: 80px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-header {
+        padding: 100px 0 60px;
+    }
+    
+    .about-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-content h2 {
+        font-size: 2rem;
+    }
+    
+    .philosophy-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-header h1 {
+        font-size: 2rem;
+    }
+    
+    .about-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .testimonial-author {
+        flex-direction: column;
+        text-align: center;
+    }
+}

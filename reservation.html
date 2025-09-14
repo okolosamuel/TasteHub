@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - TasteHub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reservation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">TasteHub</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="reservation.html" class="active">Reservation</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dark-mode-toggle"><i class="fas fa-moon"></i></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Reservation Header -->
+    <header class="reservation-header">
+        <div class="container">
+            <h1>Book Your Table</h1>
+            <p>Reserve your spot for an unforgettable dining experience at TasteHub</p>
+        </div>
+    </header>
+
+    <!-- Reservation Content -->
+    <section class="reservation-content">
+        <div class="container">
+            <div class="reservation-grid">
+                <!-- Reservation Form -->
+                <div class="reservation-form-container">
+                    <h2>Make a Reservation</h2>
+                    <form id="reservation-form" class="reservation-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Number of Guests</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="" disabled selected>Select number of guests</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5 People</option>
+                                    <option value="6">6 People</option>
+                                    <option value="7">7 People</option>
+                                    <option value="8">8 People</option>
+                                    <option value="large">More than 8 (We'll call you)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Time</label>
+                                <select id="time" name="time" required>
+                                    <option value="" disabled selected>Select time</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="11:30">11:30 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="12:30">12:30 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="13:30">1:30 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="18:30">6:30 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="19:30">7:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="20:30">8:30 PM</option>
+                                    <option value="21:00">9:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="occasion">Special Occasion (Optional)</label>
+                            <select id="occasion" name="occasion">
+                                <option value="" selected>None</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="anniversary">Anniversary</option>
+                                <option value="date">Date Night</option>
+                                <option value="business">Business Meeting</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="requests">Special Requests (Optional)</label>
+                            <textarea id="requests" name="requests" rows="4"></textarea>
+                        </div>
+                        <div class="form-group terms-checkbox">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Book Table</button>
+                    </form>
+                </div>
+                
+                <!-- Reservation Info -->
+                <div class="reservation-info">
+                    <div class="info-card">
+                        <h3>Opening Hours</h3>
+                        <ul class="hours-list">
+                            <li>
+                                <span class="day">Monday - Thursday</span>
+                                <span class="hours">11:00 AM - 3:00 PM, 6:00 PM - 10:00 PM</span>
+                            </li>
+                            <li>
+                                <span class="day">Friday - Saturday</span>
+                                <span class="hours">11:00 AM - 3:00 PM, 6:00 PM - 11:00 PM</span>
+                            </li>
+                            <li>
+                                <span class="day">Sunday</span>
+                                <span class="hours">11:00 AM - 9:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>Reservation Policy</h3>
+                        <ul class="policy-list">
+                            <li><i class="fas fa-check"></i> Reservations can be made up to 30 days in advance</li>
+                            <li><i class="fas fa-check"></i> We hold your table for 15 minutes after the reservation time</li>
+                            <li><i class="fas fa-check"></i> For parties of 8 or more, please call us directly</li>
+                            <li><i class="fas fa-check"></i> Cancellations must be made at least 4 hours in advance</li>
+                            <li><i class="fas fa-check"></i> Special requests are accommodated based on availability</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card contact-info">
+                        <h3>Need Help?</h3>
+                        <p><i class="fas fa-phone"></i> Call us: (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> Email: reservations@tastehub.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Flavor Street, Foodville, FC 12345</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Confirmation Modal -->
+    <div class="modal" id="reservation-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="confirmation-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Reservation Confirmed!</h2>
+            <p>Thank you for choosing TasteHub. We're excited to serve you!</p>
+            <div class="reservation-details">
+                <p><strong>Name:</strong> <span id="confirm-name"></span></p>
+                <p><strong>Date:</strong> <span id="confirm-date"></span></p>
+                <p><strong>Time:</strong> <span id="confirm-time"></span></p>
+                <p><strong>Party Size:</strong> <span id="confirm-guests"></span></p>
+            </div>
+            <p class="confirmation-note">A confirmation email has been sent to <span id="confirm-email"></span>.</p>
+            <div class="modal-buttons">
+                <button class="btn btn-secondary" id="modify-reservation">Modify Reservation</button>
+                <button class="btn btn-primary" id="close-modal">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>TasteHub</h2>
+                    <p>Where Flavor Meets Art</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="order.html">Order Online</a></li>
+                        <li><a href="reservation.html">Reservations</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Flavor Street, Foodville, FC 12345</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@tastehub.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h3>Subscribe to Newsletter</h3>
+                        <form>
+                            <input type="email" placeholder="Your Email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 TasteHub. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/reservation.js"></script>
+</body>
+</html>
